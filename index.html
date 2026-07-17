@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sagor | Backend Developer Portfolio</title>
+    <!-- Google Fonts (Poppins) -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS Link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- নেভিগেশন বার (Header & Nav) -->
+<header>
+    <nav>
+        <div class="logo">SAGOR.DEV</div>
+        <ul>
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- হিরো সেকশন (Hero Section) -->
+<section id="home" class="hero">
+    <div class="hero-text">
+        <h3>Hello, I am</h3>
+        <h1>Sagor</h1>
+        <h2><!-- এখানে অটো টাইপিং টেক্সট আসবে --></h2>
+        <p>I am a passionate backend developer focusing on building scalable, efficient web applications. Experienced in Java, Spring Boot, and Python ecosystem.</p>
+        <div class="buttons">
+            <a href="#contact">Contact Me</a>
+            <a href="https://github.com/sagor-428" target="_blank">GitHub Profile</a>
+        </div>
+    </div>
+    <div class="hero-image">
+        <!-- আপনার ছবি assets ফোল্ডারে profile.jpeg নামে আছে -->
+        <img src="assets/profile.jpeg" alt="Sagor's Profile Picture">
+    </div>
+</section>
+
+<!-- অ্যাবাউট সেকশন (About Me) -->
+<section id="about">
+    <h2>About Me</h2>
+    <p>I am a Computer Science and Engineering (CSE) student at Southeast University. My core expertise lies in Backend Development. I love solving complex computational problems, designing database architectures, and creating robust RESTful APIs. I constantly explore new technologies to enhance my software engineering skills.</p>
+</section>
+
+<!-- স্কিলস সেকশন (Skills & Expertise) -->
+<section id="skills">
+    <h2>Skills & Expertise</h2>
+    <div class="skills-container">
+        <!-- Java Card -->
+        <div class="skill-card">
+            <div class="skill-icon java-color">
+                <i class="fa-brands fa-java"></i>
+            </div>
+            <h3>Java</h3>
+            <p>Object-Oriented Programming & Multi-threading</p>
+            <div class="skill-progress">
+                <div class="progress-bar" style="width: 90%;"></div>
+                <span class="percentage">90%</span>
+            </div>
+        </div>
+
+        <!-- Python Card -->
+        <div class="skill-card">
+            <div class="skill-icon python-color">
+                <i class="fa-brands fa-python"></i>
+            </div>
+            <h3>Python</h3>
+            <p>Backend Scripting & Automation</p>
+            <div class="skill-progress">
+                <div class="progress-bar" style="width: 85%;"></div>
+                <span class="percentage">85%</span>
+            </div>
+        </div>
+
+        <!-- Spring Boot Card -->
+        <div class="skill-card">
+            <div class="skill-icon spring-color">
+                <i class="fa-solid fa-leaf"></i>
+            </div>
+            <h3>Spring Boot</h3>
+            <p>REST APIs & Microservices Development</p>
+            <div class="skill-progress">
+                <div class="progress-bar" style="width: 80%;"></div>
+                <span class="percentage">80%</span>
+            </div>
+        </div>
+
+        <!-- MySQL Card -->
+        <div class="skill-card">
+            <div class="skill-icon db-color">
+                <i class="fa-solid fa-database"></i>
+            </div>
+            <h3>MySQL</h3>
+            <p>Database Architecture & Complex Queries</p>
+            <div class="skill-progress">
+                <div class="progress-bar" style="width: 90%;"></div>
+                <span class="percentage">90%</span>
+            </div>
+        </div>
+
+        <!-- HTML / CSS Card -->
+        <div class="skill-card">
+            <div class="skill-icon web-color">
+                <i class="fa-brands fa-html5"></i>
+            </div>
+            <h3>HTML / CSS</h3>
+            <p>Responsive Layouts & Web Page Styling</p>
+            <div class="skill-progress">
+                <div class="progress-bar" style="width: 85%;"></div>
+                <span class="percentage">85%</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- প্রজেক্টস সেকশন (Projects with Filter) -->
+<section id="projects">
+    <h2>Projects</h2>
+
+    <!-- ফিল্টার বাটন সমূহ -->
+    <div class="filter-container">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="java">Java / Spring Boot</button>
+        <button class="filter-btn" data-filter="python">Python</button>
+        <button class="filter-btn" data-filter="others">Others</button>
+    </div>
+
+    <div class="cards">
+        <!-- প্রজেক্ট ১ (Java) -->
+        <div class="card" data-category="java">
+            <h3>Student Management System</h3>
+            <div class="tech-stack">
+                <span>JavaFX</span>
+                <span>MySQL</span>
+            </div>
+            <p class="proj-desc">A desktop application to manage student records, courses, and grades with database system.</p>
+            <a href="https://github.com/sagor-428" target="_blank" class="proj-btn"><i class="fa-brands fa-github"></i> View Code</a>
+        </div>
+
+        <!-- প্রজেক্ট ২ (Others) -->
+        <div class="card" data-category="others">
+            <h3>Classroom Booking System</h3>
+            <div class="tech-stack">
+                <span>SRS</span>
+                <span>UML</span>
+                <span>Database</span>
+            </div>
+            <p class="proj-desc">System requirement analysis and database architecture design for scheduling university classrooms.</p>
+            <a href="https://github.com/sagor-428" target="_blank" class="proj-btn"><i class="fa-brands fa-github"></i> Documentation</a>
+        </div>
+
+        <!-- প্রজেক্ট ৩ (Others/Assembly) -->
+        <div class="card" data-category="others">
+            <h3>Smart Shop Billing System</h3>
+            <div class="tech-stack">
+                <span>8086 Assembly</span>
+            </div>
+            <p class="proj-desc">Low-level assembly language based billing calculations system for modern shops.</p>
+            <a href="https://github.com/sagor-428" target="_blank" class="proj-btn"><i class="fa-brands fa-github"></i> View Code</a>
+        </div>
+    </div>
+</section>
+
+<!-- কন্টাক্ট সেকশন (Contact Me - এটি এখন সম্পূর্ণ ফাংশনাল) -->
+<!-- কন্টাক্ট সেকশন (Contact Me - Premium UI) -->
+<section id="contact">
+    <h2>Contact Me</h2>
+    <div class="contact-container">
+
+        <!-- ইমেইল কার্ড -->
+        <a href="mailto:2023100000428@seu.edu.bd" class="contact-card">
+            <div class="contact-icon">
+                <i class="fa-solid fa-envelope"></i>
+            </div>
+            <h3>Email Me</h3>
+            <p>2023100000428@seu.edu.bd</p>
+        </a>
+
+        <!-- ফোন কার্ড -->
+        <a href="tel:+8801408127043" class="contact-card">
+            <div class="contact-icon">
+                <i class="fa-solid fa-phone"></i>
+            </div>
+            <h3>Call Me</h3>
+            <p>+8801408127043</p>
+        </a>
+
+        <!-- লিঙ্কডইন কার্ড -->
+        <a href="https://www.linkedin.com/in/mdsagor-mondol-225139306/" target="_blank" class="contact-card">
+            <div class="contact-icon">
+                <i class="fa-brands fa-linkedin"></i>
+            </div>
+            <h3>LinkedIn</h3>
+            <p>Connect Professionally</p>
+        </a>
+
+    </div>
+</section>
+
+<!-- ফুটার সেকশন (Footer) -->
+<footer>
+    <p>&copy; 2026 Sagor. All Rights Reserved. Built with ❤️ for Backend Development.</p>
+</footer>
+
+<!-- ব্যাক-টু-টপ বাটন -->
+<button id="backToTop" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+<!-- Custom JavaScript Link -->
+<script src="script.js"></script>
+</body>
+</html>
